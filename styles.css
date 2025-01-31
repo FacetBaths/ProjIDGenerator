@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Evo+2:wght@400;700&display=swap");
+
+body {
+    font-family: "Evo 2", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f9f9f9;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #9945FF;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+    color: #555555;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #9945FF;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background: #14F195;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #10d185;
+}
+
+.output {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.copyable {
+    font-weight: bold;
+    color: #9945FF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.copyable:hover {
+    text-decoration: underline;
+}
+
+.copied-text {
+    color: #14F195;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
