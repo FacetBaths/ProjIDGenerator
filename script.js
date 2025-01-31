@@ -43,3 +43,13 @@ function generateProjectNumber(
 
   return `${stateAbbr}${customerLastName}${projectCount}`;
 }
+
+// Function to Show Tooltips
+function showTooltip(id) {
+  const tooltip = document.getElementById(id);
+  tooltip.classList.add("show");
+
+  setTimeout(() => {
+    tooltip.classList.remove("show");
+  }, 3000); // Hide tooltip after 3 seconds
+}

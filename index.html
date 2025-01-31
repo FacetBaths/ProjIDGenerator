@@ -16,13 +16,23 @@
         <img src="/assets/images/logo_v1.png" alt="Facet Renovations Logo" class="logo">
         <h1>Generate Project ID</h1>
         <form id="projectForm">
-            <label for="state">State:</label>
-            <input type="text" id="state" placeholder="Enter State" value="Illinois" required>
+            <label for="state">State:
+                <span class="info-icon" onclick="showTooltip('stateInfo')">ℹ️</span>
+                <span class="tooltip" id="stateInfo">Enter the full state name (e.g., Illinois).</span>
+            </label>
+            <input type="text" id="state" placeholder="Enter State" required>
 
-            <label for="lastName">Last Name:</label>
+            <label for="lastName">Last Name:
+                <span class="info-icon" onclick="showTooltip('lastNameInfo')">ℹ️</span>
+                <span class="tooltip" id="lastNameInfo">Enter the customer’s last name.</span>
+            </label>
             <input type="text" id="lastName" placeholder="Enter Last Name" required>
 
-            <label for="previousProjects">Previous Projects:</label>
+            <label for="previousProjects">Previous Projects:
+                <span class="info-icon" onclick="showTooltip('projectsInfo')">ℹ️</span>
+                <span class="tooltip" id="projectsInfo">Please input the number of projects the customer has done with
+                    us previously. Default is 0.</span>
+            </label>
             <input type="number" id="previousProjects" min="0" value="0" required>
 
             <button type="submit">Generate ID</button>

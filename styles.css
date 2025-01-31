@@ -39,6 +39,9 @@ label {
     font-weight: bold;
     text-align: left;
     color: #555555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 input {
@@ -83,4 +86,28 @@ button:hover {
     color: #14F195;
     font-size: 0.9em;
     margin-top: 5px;
+}
+
+/* Tooltip Styling */
+.info-icon {
+    font-size: 1.1em;
+    color: #9945FF;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.tooltip {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    position: absolute;
+    z-index: 10;
+    margin-top: 5px;
+}
+
+.tooltip.show {
+    display: inline-block;
 }
