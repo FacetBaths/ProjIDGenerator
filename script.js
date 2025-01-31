@@ -47,9 +47,18 @@ function generateProjectNumber(
 // Function to Show Tooltips
 function showTooltip(id) {
   const tooltip = document.getElementById(id);
-  tooltip.classList.add("show");
 
+  // Show the tooltip
+  tooltip.style.display = "block";
   setTimeout(() => {
-    tooltip.classList.remove("show");
-  }, 3000); // Hide tooltip after 3 seconds
+    tooltip.style.opacity = "1"; // Fade in
+  }, 10);
+
+  // Hide tooltip after 3 seconds
+  setTimeout(() => {
+    tooltip.style.opacity = "0"; // Fade out
+    setTimeout(() => {
+      tooltip.style.display = "none";
+    }, 300);
+  }, 3000);
 }

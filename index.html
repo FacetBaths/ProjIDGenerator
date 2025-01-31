@@ -18,22 +18,23 @@
         <form id="projectForm">
             <label for="state">State:
                 <span class="info-icon" onclick="showTooltip('stateInfo')">ℹ️</span>
-                <span class="tooltip" id="stateInfo">Enter the full state name (e.g., Illinois).</span>
             </label>
             <input type="text" id="state" placeholder="Enter State" required>
+            <div class="tooltip" id="stateInfo">Enter the full state name (e.g., Illinois).</div>
 
             <label for="lastName">Last Name:
                 <span class="info-icon" onclick="showTooltip('lastNameInfo')">ℹ️</span>
-                <span class="tooltip" id="lastNameInfo">Enter the customer’s last name.</span>
             </label>
             <input type="text" id="lastName" placeholder="Enter Last Name" required>
+            <div class="tooltip" id="lastNameInfo">Enter the customer’s last name.</div>
 
             <label for="previousProjects">Previous Projects:
                 <span class="info-icon" onclick="showTooltip('projectsInfo')">ℹ️</span>
-                <span class="tooltip" id="projectsInfo">Please input the number of projects the customer has done with
-                    us previously. Default is 0.</span>
             </label>
             <input type="number" id="previousProjects" min="0" value="0" required>
+            <div class="tooltip" id="projectsInfo">Please input the number of projects the customer has done with us
+                previously. Default is 0.</div>
+
 
             <button type="submit">Generate ID</button>
         </form>
